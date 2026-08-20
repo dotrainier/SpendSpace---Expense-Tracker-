@@ -45,7 +45,6 @@ export default function ExpensesIndex({ workspaces, activeWorkspaceId, expenses 
   }
 
   function edit(expense: Expense) {
-    console.log('expense.date:', expense.date);
     setData({
       id: expense.id,
       workspace_id: activeWorkspaceId,
