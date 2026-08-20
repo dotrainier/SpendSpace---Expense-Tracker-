@@ -13,7 +13,7 @@ class Expense extends Model
     protected $fillable = ['workspace_id', 'description', 'amount', 'category', 'date'];
 
     protected $casts = [
-        'date' => 'date',
+        'date' => 'date:Y-m-d',
         'amount' => 'decimal:2',
     ];
 
